@@ -1,0 +1,83 @@
+/* Reset some default styles */
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    box-sizing: border-box;
+}
+
+h1 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 20px;
+    /* margin: 5px; */
+    padding: 5px;
+
+}
+
+/* Set up the container and calculator box */
+.calculator-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+}
+
+.calculator-box {
+    background-color: #f5f5f5;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    width: 300px;
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+/* Define the fade-in animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Style the calculator input field */
+input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 18px;
+}
+
+/* Style the calculator buttons */
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+td {
+    padding: 5px;
+    text-align: center;
+}
+
+input[type="button"] {
+    width: 100%;
+    padding: 10px;
+    font-size: 18px;
+    background-color: black;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+input[type="button"]:hover {
+    background-color: gray;
+}
